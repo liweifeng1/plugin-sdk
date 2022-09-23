@@ -1,4 +1,4 @@
-module plugin-sdk
+module github.com/liweifeng1/plugin-sdk
 
 go 1.17
 
