@@ -14,12 +14,12 @@ func (s *PilotGoServer) GetManifest(args interface{}, resp *GetManifestReply) er
 	return nil
 }
 
-func (s *PilotGoServer) GetPluginConfiguration(args interface{}, resp *GetConfigurationReply) error {
+func (s *PilotGoServer) GetConfiguration(args interface{}, resp *GetConfigurationReply) error {
 	resp.Configuration = s.Impl.GetConfiguration()
 	return nil
 }
 
-func (s *PilotGoServer) GetWebExtensions(args interface{},resp *GetWebExtensionReply) error {
+func (s *PilotGoServer) GetWebExtension(args interface{},resp *GetWebExtensionReply) error {
 	resp.Extensions = s.Impl.GetWebExtension()
 	return nil
 }
